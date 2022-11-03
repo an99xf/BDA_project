@@ -21,9 +21,45 @@ urlcolor: blue
 
 ## Model
 
+$$
+\text{Let }Q_{ij}\text{ be the math score (a.k.a the response)}\\
+Q_{ij}|\beta_{0j}, \beta_{1}, \beta_{2}, \beta_{3},\sigma_{q}\sim N(\mu_{ij},\sigma_{q}^{2})\\
+\text{Each school's average Maths score }Q_{ij}\text{ vary around }\mu_{j}\text{ with consideration of other factors like average income (avginc), percentage of students qualifying for reduced-price lunches (mealpct) and percentage of English learners (elpct).}\\
+\beta_{0j}=\text{intercept of the regression model for school j}\\
+\beta_{1}=\text{global avginc coefficient}\\
+\beta_{2}=\text{global mealpct coefficient}\\
+\beta_{3}=\text{global elpct coefficient}\\
+\mu_{ij}=\beta_{0j}+\beta_{1}X_{ij}+\beta_{2}Y_{ij}+\beta_{3}Z_{ij}\\
+\sigma_{q}=\text{within-group variability around the mean regression model, and hence a measure of the strength of the relationship between avginc, elpct, mealpct and the average maths score}\\
+\text{Let }X_{ij}\text{ be the avginc}\\
+\text{Let }Y_{ij}\text{ be the mealpct}\\
+\text{Let }Z_{ij}\text{ be the elpct}\\
+\beta_{0j}|\beta_{0},\sigma_{0}\sim N(\beta_{0},\sigma_{0}^{2})\\
+\beta_{0}\sim N(100, 10^{2})\\
+\beta_{1}\sim N(2.5, 1^{2})\\
+\beta_{2}\sim N(2.5, 1^{2})\\
+\beta_{3}\sim N(2.5, 1^{2})\\
+\sigma_{q}\sim Exp(0.072)\\
+\sigma_{0}\sim Exp(1)\\
+$$
+1. descriptions of of at least two models
+2. descriptions and justifications of the prior choices
+3. Stan, rstanarm, or brms code included
+
 # Results
 
+1. Rhat convergence diagnostics and interpretation included
+2. HMC specific convergence diagnostics (divergences, tree depth) with interpretation of the results included
+3. effective sample size diagnostic (usually denoted with n_eff or ESS) and an interpretation of the results included
+4. posterior predictive checking and interpretation of the results
+5. model comparison and interpretation of the results
+6. predictive performance assessment if applicable (e.g. classification accuracy) and evaluation of practical usefulness of the accuracy
+7. prior sensitivity analysis: alternative prior tested and reported and whether estimates of quantities of interest changed
+
 # Discussion
+
+discussion of problems and potential improvements
+conclusion describing what was learned from the data analysis
 
 # Conclusion
 
