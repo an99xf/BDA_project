@@ -1,29 +1,29 @@
 ---
 title: "Report"
-output: html_document
-date: "2022-11-03"
+output: 
+  pdf_document: 
+    toc: yes
+    toc_depth: 1
+urlcolor: blue
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Introduction
 
-## R Markdown
+## Motivation and problem
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## modeling idea
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# Method
 
-```{r cars}
-summary(cars)
-```
+## Dataset
 
-## Including Plots
+## Analysis problem
 
-You can also embed plots, for example:
+## Model
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+# Results
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+# Discussion
+
+# Conclusion
+
