@@ -59,7 +59,9 @@ $$
 # Discussion
 
 discussion of problems and potential improvements
-conclusion describing what was learned from the data analysis
 
 # Conclusion
+
+conclusion describing what was learned from the data analysis
+
 
